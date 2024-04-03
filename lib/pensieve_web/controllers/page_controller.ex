@@ -8,7 +8,7 @@ defmodule PensieveWeb.PageController do
   end
 
   def about(conn, _params) do
-    conn = conn |> assign(:message, "hello") |> assign(:page_title, "about")
-    render(conn, :about)
+    # conn = conn |> assign(:message, "hello") |> assign(:page_title, "about")
+    render(conn, :about, message: "hello", page_title: "about")
   end
 end
